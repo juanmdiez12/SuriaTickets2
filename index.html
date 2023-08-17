@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SuriaTickets</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/modals.css" />
+  <link rel="stylesheet" href="css/cart.css" />
+  <link rel="icon" type="image/x-icon" href="./assets/img/suria_logo_ico.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <meta name="description"
+    content="Lo mejor del entretenimiento en vivo, recitales de los mejores artistas Nacionales e Internacionales utilizando un sistema de ticketing innovador.">
+  <meta property="og:title" content="SuriaTickets" />
+  <meta property="og:description"
+    content="Lo mejor del entretenimiento en vivo, recitales de los mejores artistas Nacionales e Internacionales utilizando un sistema de ticketing innovador. Todo en un solo sitio." />
+  <meta property="og:image" content="./assets/img/suria_fondo_naranja.jpeg">
+  <meta property="og:type" content="Website" />
+  <meta property="og:locale" content="es_ES" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="#"><img src="./assets/img/suria_sin_fondo.png" alt="logo" /></a>
+        <div class="cart-icon" navbar-toggler bg-white me-3 type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <i class="fa fa-shopping-cart"></i>
+          <span id="cart-count">0</span>
+        </div>
+        <div class="offcanvas offcanvas-end text-bg-white" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Bienvenido a SuriaTickets</h5>
+            <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="alert alert-info" id="cart-empty" data-component="cart.empty-message">No tienes entradas
+            </div>
+            <div id="cart-items"></div>
+            <div id="total-container">
+              <h2 id="cart-total-label">Total: $</h2>
+              <h2 id="cart-total">0</h2>
+            </div>
+            <div id="finish-purchase"><button onclick="finishPurchase()" type="button" class="btn btn-danger">Finish
+                purchase</button></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <section id="products" class="row">
+      <div class="title">
+        <span>
+          <h5>Shows</h5>
+        </span>
+      </div>
+      <div class="barraDeBusqueda" data-aos="zoom-in" data-aos-duration="1000">
+        <form>
+          <input class="buscador" type="text" placeholder="Buscar Artista o Evento." name="search" id="barraBusqueda">
+        </form>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="copy_footer">
+      SuriaTickets &copy; 2023
+    </div>
+    <a class="footer_logo" data-aos="zoom-out" data-aos-duration="1000" href=""><img class="footer_logo_img"
+        src="./assets/img/sol.png" alt="Logo del sol de SuriaTickets" loading="eager"></a>
+  </footer>
+
+  <script src="data/products.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>
