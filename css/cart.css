@@ -11,6 +11,7 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
+
 #cart-count {
   padding-right: 25px;
   position: absolute;
@@ -30,17 +31,20 @@
   margin-bottom: 10%;
   justify-content: flex-start;
 }
+
 .image-cart img {
   width: 10rem;
   margin: 10px;
   border-radius: 5px;
 }
+
 .products-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
 }
+
 div h2 {
   color: rgb(0, 0, 0);
   font-size: 12px;
@@ -64,6 +68,7 @@ div button {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 #total-container h2 {
   color: rgb(0, 0, 0);
   font-size: 22px;
@@ -72,6 +77,7 @@ div button {
   letter-spacing: 2px;
   text-align: center;
 }
+
 #finish-purchase {
   display: flex;
   justify-content: center;
@@ -79,8 +85,15 @@ div button {
   width: 100%;
 }
 
-#finish-purchase button {
+#finish-purchase button,
+#clear-cart button {
   padding: 10px;
   width: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.clear-button {
+  background-color: #000000;
+  color: #ff0000;
+  border: none;
 }

@@ -62,3 +62,39 @@ const showPurchaseSuccess = () => {
     stopOnFocus: true,
   }).showToast();
 };
+
+const removeAllCartConfirmation = () => {
+  const swalParams = {
+    icon: "warning",
+    title: "Eliminar todas las entradas del carrito?",
+    customClass: {
+      title: "swal2-title",
+    },
+    showClass: {
+      popup: "animate__animated animate__fadeInDown",
+    },
+    color: "#000",
+    background: "#fff",
+    position: "top-end",
+    customClass: "swal-wide",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Si!",
+  };
+
+  Swal.fire(swalParams).then((result) => {
+    if (result.isConfirmed) {
+      clearCart(productCart);
+      Swal.fire({
+        title: "Hecho!",
+        text: "Las entradas fueron eliminadas del carrito",
+        icon: "success",
+        color: "#000",
+        background: "#fff",
+        position: "top-end",
+        customClass: "swal-wide",
+      });
+    }
+  });
+};
