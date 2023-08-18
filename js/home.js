@@ -1,5 +1,5 @@
 const renderProducts = () => {
-  const contenedor = document.getElementsByClassName("card card-product");
+  const productsSection = document.getElementsByClassName("card card-product");
   const barraBusqueda = document.getElementById("barraBusqueda");
 
   const filtrarShowsDisponible = (term) => {
@@ -9,7 +9,7 @@ const renderProducts = () => {
   };
 
   const limpiarContenedor = () => {
-    contenedor.innerHTML = "";
+    productsSection.innerHTML = "";
   };
 
   const mostrarShowsDisponiblesFiltrados = (availableProducts) => {
