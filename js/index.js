@@ -3,5 +3,4 @@ window.onload = async () => {
   renderProducts();
   loadCart();
   renderCart();
-  //pintarProductos(productos);
 };

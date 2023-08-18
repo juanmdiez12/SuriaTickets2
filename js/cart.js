@@ -50,7 +50,7 @@ const renderCart = () => {
     const cartItem = document.createElement("div");
     cartItem.className = "cart-container";
 
-    const { id, img, artista, precio, ubicacion} = product;
+    const { id, img, artista, precio, ubicacion } = product;
 
     cartItem.innerHTML = `<div class="image-cart">
           <img src="${img}" alt="" />
