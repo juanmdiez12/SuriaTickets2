@@ -1,5 +1,5 @@
 const renderProducts = () => {
-  const productsSection = document.getElementsByClassName("card card-product");
+  productsSection.querySelectorAll(".card");
   const barraBusqueda = document.getElementById("barraBusqueda");
 
   const filtrarShowsDisponible = (term) => {
@@ -34,7 +34,7 @@ const renderProducts = () => {
         </button>
       </div>
     </div>`;
-      productsSection.appendChild(card);
+      productsSection.querySelector(".row").appendChild(card);
     });
   };
 
@@ -67,7 +67,7 @@ const renderProducts = () => {
             </button>
           </div>
         </div>`;
-        productsSection.appendChild(card);
+        productsSection.querySelector(".row").appendChild(card);
       });
     }
   });
@@ -93,7 +93,7 @@ const renderProducts = () => {
         </button>
       </div>
     </div>`;
-    productsSection.appendChild(card);
+    productsSection.querySelector(".row").appendChild(card);
   });
 };
 

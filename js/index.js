@@ -1,6 +1,6 @@
 window.onload = async () => {
-  await getProducts();
   renderProducts();
+  await getProducts();
   loadCart();
   renderCart();
 };
