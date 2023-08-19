@@ -34,7 +34,7 @@ const renderProducts = () => {
         </button>
       </div>
     </div>`;
-      productsSection.querySelector(".row").appendChild(card);
+    productsSection.appendChild(card);
     });
   };
 
@@ -67,7 +67,7 @@ const renderProducts = () => {
             </button>
           </div>
         </div>`;
-        productsSection.querySelector(".row").appendChild(card);
+        productsSection.appendChild(card);
       });
     }
   });
@@ -93,7 +93,7 @@ const renderProducts = () => {
         </button>
       </div>
     </div>`;
-    productsSection.querySelector(".row").appendChild(card);
+    productsSection.appendChild(card);
   });
 };
 
