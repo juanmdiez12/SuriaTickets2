@@ -1,5 +1,5 @@
 const renderProducts = () => {
-  const productsSection = document.querySelector("#products");
+  productsSection.querySelectorAll(".card");
   const barraBusqueda = document.getElementById("barraBusqueda");
 
   const filtrarShowsDisponible = (term) => {

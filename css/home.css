@@ -47,7 +47,7 @@ header .navbar {
 
 .main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 1200px;
@@ -84,6 +84,16 @@ h5 {
   letter-spacing: 2px;
   text-align: center;
   margin: 10px;
+}
+
+.sunLogo1 {
+  width: 100px;
+  rotate: -90deg;
+}
+
+.sunLogo2 {
+  width: 100px;
+  rotate: 90deg;
 }
 
 .barraDeBusqueda {
@@ -156,4 +166,22 @@ footer {
 
 .footer_logo_img:hover {
   rotate: 55deg;
+}
+
+.redesSociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+.redesSociales img {
+  width: 50px;
+  display: block;
+  margin: 5px;
+}
+.redesSociales img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
